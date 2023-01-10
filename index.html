@@ -1,15 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+    
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Rock, Paper, or Scissors?</title>
+    <meta name="author" content="Zeshan Tawa">
+    <meta name="description" content="A Game of Rock, Paper, and Scissors.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css"/>
+
 </head>
+
 <body>
-    <script src="rps.js">
-        
-    </script>
+    <audio id="startbuttonsound"></audio>
+    <audio id="winnersound"></audio>
+    <audio id="losersound"></audio>
+
+    <div id="start_container">
+      <h2 id="title">Welcome to Rock, Paper, or Scissors</h2>
+      <button id="startbutton">Start Game</button> 
+    </div>
     
+    <section id="game">
+
+      <div class="topcontainer">
+        <h1 id="gameh1"></h1>
+      </div>
+
+      <div id="gamecontainer">
+        <div id="playercontainer">
+          <div id="playerinformation">
+            <h1 class="playerh1">Player</h1>
+            <img id="playerlogo" class="logo" src="" alt="player-image">
+            <p id="playerscore" class="score">Score: 0</p>
+          </div>
+          <div id="btn-container">
+            <div id="rock" class="button">
+              <img src="images_rps/rock_emoji.png" alt="Rock"/>
+            </div>
+            <div id="paper" class="button">
+              <img src="images_rps/hand_emoji.png" alt="Paper"/>
+            </div>
+            <div id="scissor" class="button">
+              <img src="images_rps/scissor_emoji.png" alt="Scissor"/>
+            </div>
+          </div>
+        </div>
+
+        <div id="playercontainer">
+          <div id="playerinformation">
+            <h1 class="playerh1">Computer</h1>
+            <img id="copmuterlogo" class="logo" src="" alt="computer-image">
+            <p id="copmutercore" class="score">Score: 0</p>
+          </div>
+          <div id="btn-container">
+            <div id="computerrock" class="button">
+              <img src="images_rps/rock_emoji.png" alt="Rock"/>
+            </div>
+            <div id="computerpaper" class="button">
+              <img src="images_rps/hand_emoji.png" alt="Paper"/>
+            </div>
+            <div id="computerscissor" class="button">
+              <img src="images_rps/scissor_emoji.png" alt="Scissor"/>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bottomcontainer" id="bottomcontainer">
+        <div class="winninglogodiv">
+            <img class="winninglogo" id="userwinslogo" src="" alt="user-image">
+            <img class="winninglogo" id="robotwinslogo" src="" alt="computer-image">
+        </div>
+        <p class="gameupdates"></p>
+        <a href="index.html" id="endbutton">Play Again?</button>
+    </div>
+    </section>
+
+    <div id="end-alert" class="disappear">
+      <div id="end-desc"></div>
+      <a id="retry-btn"></a>
+    </div>
+
+    <script src="app.js"></script>
 </body>
 </html>

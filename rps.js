@@ -31,7 +31,7 @@ function game(){
 }
 
 function userInput(){
-    playerSelection = prompt('Rock, Paper, or Scissor?','');
+   // playerSelection = prompt('Rock, Paper, or Scissor?','');
     if(playerSelection.toLowerCase() == 'rock' || 
         playerSelection.toLowerCase() == 'paper' ||
         playerSelection.toLowerCase() == 'scissor'){
